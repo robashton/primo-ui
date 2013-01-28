@@ -7,6 +7,7 @@ var PrimoUi = function(game, cfg) {
   this.height = util.valueOrDefault(cfg.height, 100)
   this.items = []
 }
+
 PrimoUi.prototype = {
   show: function() {
     this.game.on('render', this.render, this)
@@ -16,8 +17,12 @@ PrimoUi.prototype = {
     this.game.off('render', this.render, this)
     this.game.off('tick', this.tick, this)
   },
+  clear: function() {
+    this.items.length = 0
+  },
   add: function(element) {
     this.items.push(element)
+    return element
   },
   remove: function(element) {
     this.items = _.without(this.items, element)
