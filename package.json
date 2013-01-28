@@ -1,0 +1,25 @@
+{
+  "name": "primo-ui",
+  "version": "0.0.0",
+  "description": "A very basic overlay manager for PrimoJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:robashton/primo-ui.git"
+  },
+  "keywords": [
+    "overlay",
+    "primo",
+    "html5",
+    "canvas"
+  ],
+  "author": "Rob Ashton",
+  "license": "MIT",
+  "dependencies": {
+    "primo-utils": "0.0.1",
+    "underscore": "~1.4.3"
+  }
+}
