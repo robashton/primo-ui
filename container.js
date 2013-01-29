@@ -6,6 +6,7 @@ var PrimoUi = function(game, cfg) {
   this.width = util.valueOrDefault(cfg.width, 100)
   this.height = util.valueOrDefault(cfg.height, 100)
   this.items = []
+  this.show()
 }
 
 PrimoUi.prototype = {
